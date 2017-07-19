@@ -43,4 +43,4 @@ class ExpenseList:
             instance: Page context object.
 
         """
-        return self.page_context 
+        return self.page_context

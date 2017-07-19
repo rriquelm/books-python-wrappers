@@ -1,4 +1,5 @@
-#$Id$#
+# -*- coding: utf-8
+from __future__ import unicode_literals
 
 from books.api.ContactsApi import ContactsApi
 from books.api.ContactPersonsApi import ContactPersonsApi

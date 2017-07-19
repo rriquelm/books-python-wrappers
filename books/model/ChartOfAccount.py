@@ -6,6 +6,7 @@ class ChartOfAccount:
         """Initialize parameters for Chart of accounts."""
         self.account_id = ''
         self.account_name = ''
+        self.account_code = ''
         self.is_active = None
         self.account_type = ''
         self.account_type_formatted = ''
@@ -51,6 +52,24 @@ class ChartOfAccount:
 
         """
         return self.account_name
+
+    def set_account_code(self, account_code):
+        """Set account code.
+
+        Args:
+            account_code(str): Account code.
+
+        """
+        self.account_code = account_code
+
+    def get_account_code(self):
+        """Get account code.
+
+        Returns:
+            str: Account code.
+
+        """
+        return self.account_code
 
     def set_is_active(self, is_active): 
         """Set whether the account is active or not.

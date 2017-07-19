@@ -1,4 +1,5 @@
-#$Id$
+# -*- coding: utf-8
+from __future__ import unicode_literals
 
 class Journal:   
     """This class is used to create object for Journals."""
@@ -63,7 +64,7 @@ class Journal:
             notes(str): Notes.
 
         """
-        self.note = notes
+        self.notes = notes
 
     def get_notes(self):
         """Get notes.

@@ -25,20 +25,18 @@ class BankAccountsParser:
             bank_accounts = BankAccount()
             bank_accounts.set_account_id(value['account_id'])
             bank_accounts.set_account_name(value['account_name'])
+            bank_accounts.set_account_code(value['account_code'])
             bank_accounts.set_currency_id(value['currency_id'])
             bank_accounts.set_currency_code(value['currency_code'])
             bank_accounts.set_account_type(value['account_type'])
-            bank_accounts.set_uncategorized_transactions(\
-            value['uncategorized_transactions'])
+            bank_accounts.set_uncategorized_transactions(value['uncategorized_transactions'])
             bank_accounts.set_is_active(value['is_active'])
             bank_accounts.set_balance(value['balance'])
             bank_accounts.set_bank_name(value['bank_name'])
-            bank_accounts.set_routing_number(value['routing_number'])
-            bank_accounts.set_is_primary_account(value['is_primary_account'])
-            bank_accounts.set_is_paypal_account(value['is_paypal_account'])
-            if value['is_paypal_account']:
-                bank_accounts.set_paypal_email_address(\
-                value['paypal_email_address'])
+            bank_accounts.set_routing_number(value.get('routing_number', ''))
+            bank_accounts.set_is_primary_account(value.get('is_primary_account', None))
+            bank_accounts.set_is_paypal_account(value.get('is_paypal_account', None))
+            bank_accounts.set_paypal_email_address(value.get('paypal_email_address', ''))
             bank_account_list.set_bank_accounts(bank_accounts)
         page_context_obj = PageContext()
         page_context = resp['page_context']

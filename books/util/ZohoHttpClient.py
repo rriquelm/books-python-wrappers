@@ -1,4 +1,5 @@
-#$Id$#
+# -*- coding: utf-8
+from __future__ import unicode_literals
 
 from urllib import urlencode,urlretrieve
 from httplib2 import Http

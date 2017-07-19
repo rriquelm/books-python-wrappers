@@ -4,7 +4,8 @@ The Python library for integrating with the Zoho Books API.
 
 ## Installation
 ---------------
-Download the `Books` folder from github repository and add the files in them to your project.
+Download the `Books` folder from github repository and add the files in them to your project or install by egg using:
+        pip install -e git+https://github.com/rriquelm/books-python-wrappers
 
 ## Documentation
 ----------------

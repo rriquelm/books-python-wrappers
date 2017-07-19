@@ -1,4 +1,5 @@
-#$Id$#
+# -*- coding: utf-8
+from __future__ import unicode_literals
 
 from books.model.Journal import Journal
 from books.model.JournalList import JournalList

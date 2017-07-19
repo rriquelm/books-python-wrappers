@@ -6,6 +6,7 @@ class BankAccount:
         """Initialize parameters for Bank accounts object."""
         self.account_id = ''
         self.account_name = ''
+        self.account_code = ''
         self.currency_id = ''
         self.currency_code = ''
         self.account_type = ''
@@ -56,7 +57,25 @@ class BankAccount:
 
         """
         return self.account_name
-   
+
+    def set_account_code(self, account_code):
+        """Set account code.
+
+        Args:
+            account_code(str): Account code.
+
+        """
+        self.account_code = account_code
+
+    def get_account_code(self):
+        """Get account code.
+
+        Returns:
+            str: Account code.
+
+        """
+        return self.account_code
+
     def set_currency_id(self, currency_id):
         """Set currency id.
 

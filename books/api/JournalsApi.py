@@ -1,4 +1,5 @@
-#$Id$#
+# -*- coding: utf-8
+from __future__ import unicode_literals
 
 from books.util.ZohoHttpClient import ZohoHttpClient
 from books.parser.JournalsParser import JournalsParser

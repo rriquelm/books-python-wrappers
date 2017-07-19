@@ -26,6 +26,7 @@ class ChartOfAccountsParser:
             chart_of_accounts = ChartOfAccount()
             chart_of_accounts.set_account_id(value['account_id'])
             chart_of_accounts.set_account_name(value['account_name'])
+            chart_of_accounts.set_account_code(value['account_code'])
             chart_of_accounts.set_account_type(value['account_type'])
             chart_of_accounts.set_is_active(value['is_active'])
             chart_of_accounts.set_is_user_created(value['is_user_created'])
